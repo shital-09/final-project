@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/payment.css">
+    <title>ShareMeds</title>
+</head>
+  <body>
+    <div class="nevbar" id="nevbar">
+      <div class="logo">
+        <a href="/index.html" class="logo"
+          ><h1>Share<span>Meds</span></h1></a
+        >
+      </div>
+      <div class="menu" id="menu">
+        <ul>
+          <li><a id="home" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="donate.html">Donate Medicine</a></li>
+          <li><a href="Ngo.html">NGO List</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="menuicon">
+        <i
+          id="menuicon"
+          onclick="togglemenu()"
+          class="fas fa-chevron-circle-down"
+        >
+          <span>MENU</span></i
+        >
+      </div>
+    </div>
+
+    <div class="cover">
+        <div class="donation_img">
+            <img src="images/donate9.png" alt="" />
+        </div>
+
+      <div class="donation_content">
+            <h1>Pay it forward.</h1>
+            <p>Someone could benefit from the perfectly good medicine that you have
+                in your home. Lend a helping hand to those in need by donating instead
+                of disposing. Your donations stop waste and save lives.             
+              </p>
+        </div>
+    </div>
+
+
+    <div class="criteria">
+      <h1>Ready to Donate ?</h1>
+      <div class="criteria_condition">
+      <p class="text"> Donated medicine must meet ALL of these criteria</p><br>
+
+      <input type="checkbox" class="check">
+      <label for="" class="text">Is not a controlled substance (no narcotic)</label><br>
+
+      <input type="checkbox" class="check">
+      <label for="" class="text"> Will not expire for at least 5 months</label><br>
+
+      <input type="checkbox" class="check">
+      <label for="" class="text"> Is in sealed packaging (standard amber vials not eligible)</label><br>
+
+      <input type="checkbox" class="check">
+      <label for="" class="text">Does not require refrigeration</label><br>
+
+      <input type="checkbox" class="check">
+      <label for="" class="text"> Understand there is a $10+ shipping charge</label><br>
+    </div>
+    </div>
+
+
+
+    <div class="container">
+      <form action="">
+          <div class="row">
+              <div class="col">
+                  <h3 class="title">billing address</h3>
+  
+                  <div class="inputBox">
+                      <span>full name :</span>
+                      <input type="text" placeholder="john deo">
+                  </div>
+                  <div class="inputBox">
+                      <span>email :</span>
+                      <input type="email" placeholder="example@example.com">
+                  </div>
+                  <div class="inputBox">
+                      <span>address :</span>
+                      <input type="text" placeholder="room - street - locality">
+                  </div>
+                  <div class="inputBox">
+                      <span>city :</span>
+                      <input type="text" placeholder="mumbai">
+                  </div>
+  
+                  <div class="flex">
+                      <div class="inputBox">
+                          <span>state :</span>
+                          <input type="text" placeholder="india">
+                      </div>
+                      <div class="inputBox">
+                          <span>zip code :</span>
+                          <input type="text" placeholder="123 456">
+                      </div>
+                  </div>
+  
+              </div>
+  
+              <div class="col">
+  
+                  <h3 class="title">payment</h3>
+  
+                  <div class="inputBox">
+                      <span>cards accepted :</span>
+                      <img src="images/card_img.png" alt="">
+                  </div>
+                  <div class="inputBox">
+                      <span>name on card :</span>
+                      <input type="text" placeholder="mr. john deo">
+                  </div>
+                  <div class="inputBox">
+                      <span>credit card number :</span>
+                      <input type="number" placeholder="1111-2222-3333-4444">
+                  </div>
+                  <div class="inputBox">
+                      <span>exp month :</span>
+                      <input type="text" placeholder="january">
+                  </div>
+  
+                  <div class="flex">
+                      <div class="inputBox">
+                          <span>exp year :</span>
+                          <input type="number" placeholder="2022">
+                      </div>
+                      <div class="inputBox">
+                          <span>CVV :</span>
+                          <input type="text" placeholder="1234">
+                      </div>
+                  </div>
+  
+              </div>
+      
+          </div>
+  
+          <input type="submit" value="proceed to checkout" class="submit-btn">
+  
+      </form>
+  
+  </div>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <section class="payment">
+    <div class="container">
+      <div class="left">
+        <h3>BILLING ADDRESS</h3>
+        <form>
+          Full name
+          <input type="text" class="info" name="" placeholder="Enter name">
+          Email
+          <input type="text" class="info" name="" placeholder="Enter email">
+  
+          Address
+          <input type="text" class="info"  name="" placeholder="Enter address">
+          
+          City
+          <input type="text" class="info" name="" placeholder="Enter City">
+          <div id="zip">
+            <label>
+              State
+              <select>
+                <option>Choose State..</option>
+                <option>Rajasthan</option>
+                <option>Hariyana</option>
+                <option>Uttar Pradesh</option>
+                <option>Madhya Pradesh</option>
+              </select>
+            </label>
+              <label>
+              Zip code
+              <input type="number" class="info"name="" placeholder="Zip code">
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="right">
+        <h3>PAYMENT</h3>
+        <form>
+          Accepted Card <br>
+          <img src="image/card1.png" width="100">
+          <img src="image/card2.png" width="50">
+          <br><br>
+  
+          Credit card number
+        <input type="text" class="info" name="" placeholder="Enter card number">
+          
+          Exp month
+          <input type="text" class="info" name="" placeholder="Enter Month">
+          <div id="zip">
+            <label>
+              Exp year
+              <select>
+                <option>Choose Year..</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+              </select>
+            </label>
+              <label>
+              CVV
+              <input type="number" class="info" name="" placeholder="CVV">
+            </label>
+          </div>
+        </form>
+        <input type="submit" class="info"  name="" value="Proceed to Checkout">
+      </div>
+    </div>
+  </section> -->
+
+
+  <div class="main_medicine_container">
+  <div class="medicine_container">
+    <h1 class="form-title">List Of Donated Medicne</h1>
+    <form action="#">
+      <div class="main-user-info">
+
+        <div class="user-input-box">
+          <label class="drug_info" for="drug_code">National Drug Code(NDC)</label>
+          <input type="text" name="drug_code" placeholder="">
+        </div>
+
+        <div class="user-input-box">
+          <label class="drug_info" for="drug_name">Drug Name </label>
+          <input type="text" name="drug_name" placeholder="">
+        </div>
+
+        <div class="user-input-box">
+          <label class="drug_info" for="expiration_date">Expiration Date</label>
+          <input type="date" name="expiration_date" placeholder="" >
+        </div>
+
+        <div class="user-input-box">
+          <label class="drug_info" for="type">Qty Type</label>
+          <input type="text"  name="type" placeholder="">
+        </div>
+
+        <div class="user-input-box">
+      <label class="drug_info" for="drugs">Qty Type:</label>
+     <select id="drug">
+     <option class="input_field" value="">Pills (Tablets, Capsules, Etc)</option>
+     <option class="input_field" value="">Mililitres(liquid,solution,drops)</option>
+     <option class="input_field" value="">Inhalers</option>
+     <option class="input_field"value="">Injection</option>
+     <option class="input_field" value="">Patches</option>
+     <option class="input_field"value="">Tubes(Cream , ointment, Lotion)</option>
+     <option class="input_field" value="">Other</option>
+    </select>
+    </div>
+      </div>
+      <div class="form-submit-btn">
+        <input type="submit" value="Register">
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="footer_container">
+      <div class="row">
+          <div class="footer-col">
+              <h4>company</h4>
+              <ul>
+                  <li><a href="/index.html" class="logo"><h1>Share<span>Meds</span></h1></a></li>
+                  <li><a href="#">hello@sharemeds.org</a></li>
+                  <li><a href="#">9307138258</a></li>      
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Visit</h4>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Donate Medicine</a></li>
+                  <li><a href="#">Contact us</a></li>
+              </ul>
+          </div>
+      
+          <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+    <script>
+      // drop down menu script
+      var menu = document.getElementById("menu");
+      menu.style.maxHeight = "0px";
+      function togglemenu() {
+          if (menu.style.maxHeight == "0px") {
+              menu.style.maxHeight = "390px";
+          }
+          else {
+              menu.style.maxHeight = "0px";
+          }
+      }
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
+    <title>ShareMeds</title>
+</head>
+<body>
+    <div class="nevbar" id="nevbar">
+        <div class="logo">
+            <a href="/index.html" id="logo"><h1>Share<span>Meds</span></h1></a>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donate.html">Donate Medicine</a></li>
+                <li><a href="Ngo.html">NGO List</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                
+            </ul>
+        </div>
+        <div class="menuicon">
+            <i id="menuicon" onclick="togglemenu()" class="fas fa-chevron-circle-down"> <span>MENU</span></i>
+        </div>
+    </div>
+
+    <div class="cover">
+        <div class="mission">
+            <h1>Our Mission</h1>
+            <p>SIRUM (Supporting Initiatives to Redistribute Unused Medicine) is a social enterprise committed to expanding healthcare access for those in need. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, fuga nobis ad, et tenetur odio, cumque numquam quidem assumenda nulla eos distinctio quaerat totam dicta eaque voluptates natus doloribus explicabo. Quod laudantium corporis adipisci officiis placeat accusamus doloremque consequatur aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, rerum! Lorem ipsum dolor sit amet.
+            </p>
+            <a href="payment.html" target="blank"><button>DONATE</button></a>
+        </div>
+    </div>
+
+
+    <div class="about">
+        <div class="img_container">
+            <div class="about_img"></div>
+        </div>
+        <div class="about_content">
+            <h5>___</h5>
+            <h1>Our Mission</h1>
+            <p>We often are left over with surplus medicines. Many a times, we do not consume all the medicines from a bottle or a strip and then are faced with a dilemma as to what to do with them. On the other hand there are several people who are in need of such expensive medicines in the course of their treatment, but cant afford to buy these. </p>
+            <h4>OUR MISSION</h4>
+            <p>1. To bridge the gap between surplus community and deficit community.</p>
+            <p>2. To ensure that surplus medicine is utilised in the correct manner.</p>
+            <p>3. To ensure that the underprivilege community is not devoid of proper medical care.</p>
+            <p>4. To reduce medical waste</p>
+            <br>
+            <h5>___</h5>
+        </div>
+    </div>
+
+
+    <div class="points">
+        <div class="point_content">
+            <h5>___</h5>
+            <h1>WE NEED YOU!!</h1>
+            <h4>Any one can participate</h4>
+            <p>1. Whether you are a school going kid, or a senior citizen, You can volunteer help our cause in the following ways.</p>
+            <p>2. Install drop boxes at your locality and society after taking due permissions.</p>
+            <p>3. Collect medicines from your drop boxes and send it to us.</p>
+            <p>4. Organize collection drives.</p>
+            <p>5. Donate the medicines to the respective destination.</p>
+            <p>6. Get ideas and suggestions of places where the medicines could be donated.</p>               
+            <h5>___</h5>
+        </div>
+        <div class="point_container">
+            <div class="point_img"></div>
+        </div>
+    </div>
+
+
+    <div class="team">
+        <div class="team_content">
+            <h5>___</h5>
+            <h1>Join our team</h1>
+            <p> 1. We’re a small team that’s passionate about our mission of reimagining healthcare access for those in need.</p>
+            <p> 2. We're consistently looking for people who share our mission and want to contribute their expertise in strategy, building partnerships, engineering, and more.</p>               
+            <h5>___</h5>
+            <br>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="/index.html" class="logo"><h1>Share<span>Meds</span></h1></a></li>
+
+                        <li><a href="#">hello@sirum.org</a></li>
+                        <li><a href="#">999999999</a></li>      
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Visit</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Donate Medicine</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+
+   <script>
+    // drop down menu script
+    var menu = document.getElementById("menu");
+    menu.style.maxHeight = "0px";
+    function togglemenu() {
+        if (menu.style.maxHeight == "0px") {
+            menu.style.maxHeight = "390px";
+        }
+        else {
+            menu.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
+ 

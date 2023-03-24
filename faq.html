@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/faq.css">
+    <title>ShareMeds</title>
+</head>
+<body>
+
+    <!---------- Navbar ---------->
+
+    <div class="nevbar" id="nevbar">
+        <div class="logo">
+            <a href="/index.html" class="logo"><h1>Share<span>Meds</span></h1></a>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donate.html">Donate Medicine</a></li>
+                <li><a href="Ngo.html">NGO List</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                
+            </ul>
+        </div>
+        <div class="menuicon">
+            <i id="menuicon" onclick="togglemenu()" class="fas fa-chevron-circle-down"> <span>MENU</span></i>
+        </div>
+    </div>
+
+    <!-- Banner Page -->
+    <div class="cover">
+        <div class="information">
+            <h1>FAQ</h1>
+        </div>
+    </div>
+
+    <section class="faq">
+    <h1>Frequently Asked Questions</h1>
+	<div class="faq_que">
+		<p>Who can donate medicine?<i class="fa fa-chevron-circle-down"></i>
+        </p>
+		<div class="answer">ShareMeds can help most organizations or individuals donate medicine, as long as you are eligible per state policy. To understand your eligibility or join a waitlist.</div>
+	</div>
+	<div class="faq_que">
+		<p>What if my facility type is not listed? <i class="fa fa-chevron-circle-down"></i></p>
+		<div class="answer">Contact us, we can probably still help!</div>
+	</div>
+	<div class="faq_que">
+		<p>Can individuals donate? What if I have extra medicine in my medicine cabinet? <i class="fa fa-chevron-circle-down"></i></p>
+		<div class="answer">Yes, individuals in most states can donate medicine via ShareMeds. We do not currently accept donations from individuals in Dabha Nagpur</div>
+	</div>
+    <div class="faq_que">
+		<p>Is donating medicine free for organizations? <i class="fa fa-chevron-circle-down"></i></p>
+		<div class="answer">Donating unopened, unexpired, non-controlled, and high-demand medicine is free for organizations; ShareMeds covers the cost of shipping. If you would like to donate all your unexpired, unopened, non-controlled medication without sorting (like single-stream recycling), you can pay a small fee to help cover costs.</div>
+	</div>
+    <div class="faq_que">
+		<p>Is this legal? <i class="fa fa-chevron-circle-down"></i></p>
+		<div class="answer">Yes. Donating medicine is legal. ShareMeds works under each state’s Good Samaritan Laws for Drug Donation.</div>
+	</div>
+</section>
+
+
+    </body>
+    <script>
+
+var menu = document.getElementById("menu");
+    menu.style.maxHeight = "0px";
+    function togglemenu() {
+        if (menu.style.maxHeight == "0px") {
+            menu.style.maxHeight = "390px";
+        }
+        else {
+            menu.style.maxHeight = "0px";
+        }
+    }
+
+
+        var faqs = document.querySelectorAll(".faq_que");
+
+for (var i = 0; i < faqs.length; i++) {
+    faqs[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+    });
+}
+    </script>
+</html>
